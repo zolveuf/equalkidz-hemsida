@@ -844,3 +844,61 @@ audio {
 
 }
 
+/* Initial blur effect on the content */
+.blur-layer {
+    filter: blur(5px); 
+    transition: filter 0.7s ease-in-out; 
+    pointer-events: none; 
+    opacity: 0.8; 
+}
+
+/* When the blur is removed */
+.blur-layer.active {
+    filter: blur(0);
+    pointer-events: all; /* Allow interaction after code is entered */
+    opacity: 1; /* Remove transparency */
+}
+
+.code-entry {
+    margin-bottom: 20px;
+}
+
+/* Style for the input and button */
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.böcker-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: none;
+}
+
+
+.material-icons{
+    color: black;
+    transition: .5s all ease-in-out;
+
+}
+
+
+/* Initially hide the audio */
+.audiobook audio {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* When expanded, display the audio */
+.audiobook.expanded audio {
+    display: block;
+}
+
+.audio-section{
+    margin-top: -100px;
+}
