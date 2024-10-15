@@ -449,6 +449,7 @@ header.sticky{
     padding: 70px 17% 60px;
     background-color: var(--bg-color);
     color: var(--text-color);
+    padding-top: 200px;
 }
 
 .contact-container {
@@ -485,6 +486,10 @@ header.sticky{
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+textarea {
+    resize: none; /* Prevents resizing of the textarea */
 }
 
 .submit-btn {
