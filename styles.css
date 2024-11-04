@@ -907,3 +907,8 @@ input[type="password"] {
 .audio-section{
     margin-top: -100px;
 }
+
+.footer-box .sponsor-logo {
+    width: 180px; /* Adjust the width as needed */
+    margin-top: 10px;
+}
