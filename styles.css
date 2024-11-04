@@ -742,9 +742,10 @@ audio {
 }
 
 .audiobook.expanded {
-    height: 350px;
+    height: 500px;
     transform: scale(1.05);
 }
+
 
 .audiobook h4 {
     font-size: 1.25rem;
@@ -793,9 +794,16 @@ audio {
     position: relative;
 }
 
+.facit{
+    background-color: var(--main-color);
+}
+
 .audiobook.expanded {
     height: 150px; /*Ändra sen när man lägger till facit*/
     transform: scale(1.05);
+}
+.facit.expanded{
+    height: 250px;
 }
 
 .audiobook h4 {
@@ -806,14 +814,16 @@ audio {
 }
 
 .audiobook audio,
-.audiobook .btn {
+.audiobook .btn,
+.audiobook a {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
 }
 
 .audiobook.expanded audio,
-.audiobook.expanded .btn {
+.audiobook.expanded .btn,
+.audiobook.expanded a {
     opacity: 1;
     visibility: visible;
 }
