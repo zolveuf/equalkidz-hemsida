@@ -50,9 +50,12 @@ header{
     margin: 15px 22px;
     transition: all .5s ease;
 }
-.navbar a:hover{
-    transform: translateX(-5px);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .navbar a:hover{
+        transform: translateX(-5px);
+    }
+  }
 .h-right{
     display: flex;
     align-items: center;
@@ -70,10 +73,13 @@ header{
     margin-left: 5px;
     transition: all .5s ease;
 }
-.h-right a:hover{
-    color: var(--bg-color);
-    transform: translateY(-3px);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .h-right a:hover{
+        color: var(--bg-color);
+        transform: translateY(-3px);
+    }
+  }
 #menu-icon{
     color: var(--text-color);
     font-size: 30px;
@@ -141,12 +147,15 @@ section{
     transition: .5s all ease;
     cursor: pointer;
 }
-.btn:hover{
-    transform: translate(10px);
-    border: 2px solid var(--text-color);
-    background: transparent;
-    color: var(--text-color);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn:hover{
+        transform: translate(10px);
+        border: 2px solid var(--text-color);
+        background: transparent;
+        color: var(--text-color);
+    }
+  }
 header.sticky{
     padding: 8px 17px;
 }
@@ -171,18 +180,24 @@ header.sticky{
     display: block;
     transition: transform 0.7s;
 }
-.row-img img:hover{
-    transform: scale(1.2);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .row-img img:hover{
+        transform: scale(1.2);
+    }
+  }
 .tjänster-content h4{
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;
     transition: all .5s ease;
 }
-.tjänster-content h4:hover{
-    color: var(--main-color);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .tjänster-content h4:hover{
+        color: var(--main-color);
+    }
+  }
 .två{
     display: flex;
     grid-template-columns: repeat(2, 1fr);
@@ -257,11 +272,14 @@ header.sticky{
     font-size: var(--p-font);
     font-weight: 700;
 }
-.box img:hover{
-    filter: brightness(90%);
-    transform: scale(1.04);
-    cursor: pointer;
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .box img:hover{
+        filter: brightness(90%);
+        transform: scale(1.04);
+        cursor: pointer;
+    }
+  }
 .center-btn{
     text-align: center;
     margin-top: 4rem;
@@ -324,6 +342,12 @@ header.sticky{
     transform: translateX(-5px);
     color: var(--text-color);
 }
+@media (hover: hover) and (pointer: fine) {
+    .footer-box a:hover{
+        transform: translateX(-5px);
+        color: var(--text-color);
+    }
+  }
 .social a{
     display: inline-flex;
     align-items: center;
@@ -337,11 +361,14 @@ header.sticky{
     margin-right: 8px;
     transition: transform 0.6s;
 }
-.social a:hover{
-    background: var(--main-color);
-    color: var(--bg-color);
-    transform: translateX(-5px);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .social a:hover{
+        background: var(--main-color);
+        color: var(--bg-color);
+        transform: translateX(-5px);
+    }
+  }
 
 .copyright{
     text-align: center;
@@ -504,12 +531,15 @@ textarea {
     border-radius: 5px;
 }
 
-.submit-btn:hover {
-    transform: translate(10px);
-    border: 2px solid var(--text-color);
-    background: transparent;
-    color: var(--text-color);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .submit-btn:hover {
+        transform: translate(10px);
+        border: 2px solid var(--text-color);
+        background: transparent;
+        color: var(--text-color);
+    }
+  }
 
 /*RESPONSIVE DESIGN*/
 @media (max-width:1700px){
@@ -764,10 +794,13 @@ audio {
     font-weight: 600;
 }
 
-.audiobook .btn:hover {
-    background: var(--text-color);
-    color: var(--bg-color);
-}
+
+@media (hover: hover) and (pointer: fine) {
+    .audiobook .btn:hover {
+        background: var(--text-color);
+        color: var(--bg-color);
+    }
+  }
 
 audio {
     width: 100%;
